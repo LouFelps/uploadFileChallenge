@@ -38,10 +38,13 @@ npm install
 Crie o arquivo .env.development na raiz do projeto e insira os seguintes dados:
 
 PORT=Porta para rodar a API
+
 DATABASE_URI=Caminho para acesso ao banco de dados
 
 Ex:
+
 PORT=8001
+
 DATABASE_URI=mongodb://localhost:27017/uploaderAPI
 
 **Importante:** Nunca adicione arquivos `.env` (ou `.env.development`) ao controle de versão (Git), pois eles contêm informações sensíveis.
@@ -49,6 +52,7 @@ DATABASE_URI=mongodb://localhost:27017/uploaderAPI
 ### 3. Rodar o servidor
 
 Certifique-se de que seu servidor MongoDB esteja em execução antes de iniciar o backend.
+
 Em seguida, na raiz do projeto, execute:
 
 ```bash
