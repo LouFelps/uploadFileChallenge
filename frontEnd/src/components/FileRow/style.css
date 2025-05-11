@@ -1,0 +1,44 @@
+.table-row {
+  display: table-row;
+  border-bottom: 1px solid #333;
+  transition: background-color 0.2s ease;
+}
+
+.table-row:nth-child(even) {
+  background-color: #20242a;
+}
+
+.table-row:nth-child(odd) {
+  background-color: #1e2227;
+}
+
+.table-row:hover {
+  background-color: #2f343d;
+}
+
+.table-cell {
+  display: table-cell;
+  padding: 0.8rem 1rem;
+  text-align: left;
+}
+
+.table-cell.text-center {
+  text-align: center;
+}
+
+.table-cell.rename-input-cell {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.rename-input {
+  padding: 0.5rem;
+  border: 1px solid #61dafb;
+  border-radius: 6px;
+  background-color: #3a3f4b;
+  color: #e0e0e0;
+  font-size: 0.9rem;
+  flex-grow: 1;
+  min-width: 80px;
+}
