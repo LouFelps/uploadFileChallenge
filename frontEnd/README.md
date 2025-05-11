@@ -31,7 +31,7 @@ npm install
 
 Crie o arquivo .env na raiz do projeto e insira a URI da api do backend
 
-UPLOAD_API_BACK=http://localhost:8001/api/
+UPLOAD_API_BACK=http://localhost:8001/
 
 Importante: Nunca adicione arquivos .env ao controle de versão (Git), pois eles podem conter informações sensíveis.
 
