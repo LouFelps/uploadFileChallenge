@@ -71,6 +71,8 @@ Este comando chama npx cypress open para abrir a interface grafica e iniciar os 
 
 Também ha a possibilidade de rodar npx cypress run direto no terminal, o que o levará a rodar os testes sem interface grafica.
 
+Os arquivos de download gerados nos testes ficam na pasta ./uploadFileChallenge/frontEnd/cypress/downloads
+
 ## 📌 Decisões Técnicas
 
 * A interface foi mantida propositalmente simples para focar nas funcionalidades principais.
