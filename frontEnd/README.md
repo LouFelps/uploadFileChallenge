@@ -37,7 +37,7 @@ Importante: Nunca adicione arquivos .env ao controle de versão (Git), pois eles
 
 ### 3. Rodar o projeto
 
-Certifique-se de que o backend da API esteja rodando e acessível na porta configurada (ex: http://localhost:8001/api/).
+Certifique-se de que o backend da API esteja rodando e acessível na porta configurada (ex: http://localhost:8001/).
 
 Em seguida, na raiz do projeto, execute:
 
