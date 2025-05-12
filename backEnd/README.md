@@ -88,7 +88,7 @@ Este comando executará todos os testes definidos com Vitest e Supertest, exibin
 
 ## 📌 Decisões Técnicas
 
-- Para o upload de arquivos foi utilizado fastify-multipart, que utiliza de Streams com pipeline() o que divide o arquivo em varias partes evitando o uso excessivo de memória, mesmo com arquivos de +1GB.
+- Para o upload de arquivos foi utilizado fastify-multipart, que faz uso de Streams com pipeline() o que divide o arquivo em varias partes evitando o uso excessivo de memória, mesmo com arquivos de +1GB.
 **Com essa estrutura foi realizado um teste no sistema com um arquivo de 1.9GB em que o upload levou apenas 2.2 segundos para ser realizado.**
 
 - A extensão do arquivo original foi preservada mesmo após renomeação, garantindo que o download funcione corretamente e evitando bugs.
@@ -98,8 +98,8 @@ Este comando executará todos os testes definidos com Vitest e Supertest, exibin
 - Foi utilizado um token para poder baixar os arquivos evitando exposição de estrutura interna, pois tokens UUID são mais seguros. Esse token também possibilita futuras implementações, como validade temporária de links ou download público controlado.
 O token também substitui o uso direto do _id do banco, evitando exposição de estrutura interna e reduzindo riscos de ataques por enumeração.
 
-- Estrutura modular com camadas bem definidas para facilitar manutenções futuras (controller, service, repository). Essa estrutura foi escolhida baseada na experiência previa e qualidade de software, auxiliando para o crescimento da API com baixo acoplamento.
+- Estrutura modular feita em camadas para facilitar manutenções futuras (controller, service, repository). Essa estrutura foi escolhida baseada na experiência previa e qualidade de software, auxiliando para o crescimento da API com baixo acoplamento.
 
-- Testes Robustos: A combinação de **Vitest** com **Supertest** para testar os endpoints da API (simulando requisições HTTP reais) garante uma cobertura abrangente e confiável do código.
+- Testes: A combinação de **Vitest** com **Supertest** para testar os endpoints da API (simulando requisições HTTP reais) garante uma cobertura abrangente e confiável do código.
 
 - Variáveis de ambiente usadas para URLs, portas e Mongo, facilitando deploy ou troca de ambiente (produção/teste).

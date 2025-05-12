@@ -78,7 +78,7 @@ Os arquivos de download gerados nos testes ficam na pasta ./uploadFileChallenge/
 * A interface foi mantida propositalmente simples para focar nas funcionalidades principais.
 * O input de arquivos é resetado com `useRef` após o upload para evitar bugs visuais e garantir uma nova seleção de arquivo.
 * A URL da API do backend é gerenciada por variável de ambiente (`UPLOAD_API_BACK`), facilitando a configuração em diferentes ambientes (desenvolvimento, produção).
-* A arquitetura do frontend foi criada com base na vivência com os sistemas desenvolvidos no InCor, fazendo uso da **Arquitetura Baseada em Componentes (Component-Based Architecture)**. Escolhi essa arquitetura pela experiência prévia e também para tornar o projeto muito mais organizado, modular e pronto para o crescimento.
+* A arquitetura do frontend foi criada com base na vivência com os sistemas desenvolvidos no trabalho, fazendo uso da **Arquitetura Baseada em Componentes (Component-Based Architecture)**. Escolhi essa arquitetura pela experiência prévia e também para tornar o projeto muito mais organizado, modular e pronto para o crescimento.
 * A aplicação foi modularizada com **React Router** para o gerenciamento de rotas e **páginas separadas** para diferentes seções da UI.
 * A UI foi dividida em **componentes reutilizáveis**, cada um com uma responsabilidade específica:
     * `FileUploadSection`: Gerencia a lógica de input de arquivos e a interação com o botão de upload.
