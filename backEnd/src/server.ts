@@ -12,7 +12,7 @@ async function serverBuild(): Promise<FastifyInstance> {
       logger: env?.env === 'development',
     });
     server.register(fastifyMultipart, {
-      limits: {fileSize: 100000*1024**4}
+      limits: {fileSize: 100*1024**4}
     });
     server.register(routes, { prefix: '/api' });
     server.register(fastifyStatic, {
