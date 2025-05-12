@@ -17,7 +17,7 @@ Entre os principais recursos implementados estão:
 
 ## 🔐 Decisões de Arquitetura
 
-- O documento em Docx disponibilizado junto com o projeto contém algumas decisões de arquitetura tomadas durante o desenvolvimento da aplicação e cada projeto independente (BackEnd e FrontEnd) possuem READMEs para instrução de como rodar o projeto.
+- O documento em Docx disponibilizado junto com o projeto contém algumas decisões de arquitetura tomadas durante o desenvolvimento da aplicação e cada projeto independente (BackEnd e FrontEnd) possui um README para auxiliar na instalação de bibliotecas e instruções de uso do projeto.
 
 ## 🔮 Próximos Passos (ideias para evolução)
 
