@@ -1,5 +1,5 @@
 import request from 'supertest';
-import serverBuild from '../server'; // Ajuste o caminho se necessário
+import serverBuild from '../server';
 import path from 'path';
 import fs from 'fs';
 import { beforeAll, afterAll, describe, it, expect } from 'vitest';
